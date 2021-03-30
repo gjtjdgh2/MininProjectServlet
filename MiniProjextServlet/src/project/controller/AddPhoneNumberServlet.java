@@ -36,7 +36,7 @@ public class AddPhoneNumberServlet extends HttpServlet {
 			String keyword= req.getParameter("keyword");
 			AddPhoneNumberDao dao = new AddPhoneNumberDaoOracl();
 			List<AddPhoneNumberVo> list = dao.search(keyword);
-			dao.search(keyword);
+			
 			req.setAttribute("list", list);
 			
 			
